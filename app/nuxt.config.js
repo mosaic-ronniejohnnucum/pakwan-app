@@ -62,31 +62,56 @@ export default {
   build: {
   },
 
+  axios : {
+    baseUrl : 'http://localhost:8080/api/v1'
+  },
+
+  router : {
+    middleware : ['auth']
+  },
+
   auth: {
+    redirect : {
+      home: '/',
+      login : '/login'
+    },
     strategies: {
-      awsCognito: {
-        scheme: "oauth2",
-        endpoints: {
-          authorization: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/login",
-          token: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/oauth2/token",
-          userInfo: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
-          logout: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/logout"
-        },
+      // awsCognito: {
+      //   scheme: "oauth2",
+      //   endpoints: {
+      //     authorization: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/login",
+      //     token: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/oauth2/token",
+      //     userInfo: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
+      //     logout: "https://myxamarinapp.auth.us-east-1.amazoncognito.com/logout"
+      //   },
+      //   token: {
+      //     property: "access_token",
+      //     type: "Bearer",
+      //     maxAge: 3600
+      //   },
+      //   refreshToken: {
+      //     property: "refresh_token",
+      //     maxAge: 60 * 60 * 24 * 30
+      //   },
+      //   responseType: "token",
+      //   redirectUri: "http://localhost:3000/login",
+      //   logoutRedirectUri: "http://localhost:3000/login",
+      //   clientId: "4jlfe2iki0ucn32uc44clmib3d",
+      //   scope: ["email", "openid", "profile"],
+      //   codeChallengeMethod: "S256"
+      // },
+      local: {
         token: {
-          property: "access_token",
-          type: "Bearer",
-          maxAge: 3600
+          property: 'data.AccessToken',
+          global: true,
+          required: true,
+          type: 'Bearer'
         },
-        refreshToken: {
-          property: "refresh_token",
-          maxAge: 60 * 60 * 24 * 30
+        endpoints: {
+          login: { url: '/login', method: 'post' },
+          logout: false,
+          user: false
         },
-        responseType: "token",
-        redirectUri: "http://localhost:3000/login",
-        logoutRedirectUri: "http://localhost:3000/login",
-        clientId: "4jlfe2iki0ucn32uc44clmib3d",
-        scope: ["email", "openid", "profile"],
-        codeChallengeMethod: "S256"
       }
     }
   }
