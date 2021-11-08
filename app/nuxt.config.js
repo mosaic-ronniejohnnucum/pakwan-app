@@ -70,6 +70,11 @@ export default {
     middleware : ['auth']
   },
 
+  loading: {
+    color: '#053B66',
+    height: '5px'
+  },
+
   auth: {
     redirect : {
       logout: '/login',
