@@ -94,12 +94,12 @@ export default {
             await this.$auth.loginWith('local', {
                 data : this.user
             }).then(res => {
-                this.$router.push('/')
                 this.$auth.setToken(res.data.data.AccessToken)
                 
             }).catch(e => {
                 const { response } = e
-                this.error = response.data.description
+                if(typeof(response) != 'undefined')
+                  this.error = response.data.description
             })
         }
     },
