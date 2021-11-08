@@ -6,7 +6,7 @@
         Menu
     </button>
     <ul>
-        <li><nuxt-link to="/dashboard" class="active d-flex align-items-center"><div class="nav-box"><img src="~/assets/images/homeicon.png"></div> Home</nuxt-link></li>
+        <li><nuxt-link to="/" class="active d-flex align-items-center"><div class="nav-box"><img src="~/assets/images/homeicon.png"></div> Home</nuxt-link></li>
         <li><nuxt-link to="/pos" class="d-flex align-items-center"><div class="nav-box"><img src="~/assets/images/cashier.png"></div> POS</nuxt-link></li>
         <li><nuxt-link to="/my-items" class="d-flex align-items-center"><div class="nav-box"><img src="~/assets/images/posicon.png"></div> My Items</nuxt-link></li>
         <li><nuxt-link to="/insights" class="d-flex align-items-center"><div class="nav-box"><img src="~/assets/images/chart.png"></div> Insights</nuxt-link></li>
