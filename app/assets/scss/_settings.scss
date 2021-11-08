@@ -1,0 +1,56 @@
+section.dashboard-content {
+    ul#nav-settings {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            padding: 10px 0;
+            border-bottom: solid 1px $agrey;
+            a {
+                font-weight: $bold;
+                color: $black;
+                @include font-size(1.1rem);
+                small {
+                    font-weight: $medium;
+                    @include font-size(0.75rem);
+                }
+            }
+            a:hover, a.active {
+                color: $blue;
+            }
+        }
+        li:last-child {
+            border: 0;
+        }
+    }
+    #personal {
+        h4 {
+            font-weight: $bold;
+        }
+        form {
+            .image-upload, .form-group {
+                width: 32%;
+            }
+            .form-group {
+                input {
+                    display: block;
+                    clear: both;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 0 0 15px 0;
+                }
+                div {
+                    label {
+                        @include font-size(0.9rem);
+                    }
+                }   
+            }
+            button:disabled, button[disabled] {
+                background-color: $lgrey;
+                border: 0;
+                color: $grey;
+            }
+        }
+    }
+}
