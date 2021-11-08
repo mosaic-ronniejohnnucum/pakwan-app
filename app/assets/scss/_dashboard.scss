@@ -1,5 +1,6 @@
 section.dashboard-content {
     padding: 72px 15px 60px 15px;
+    min-height: 100vh;
     #notifications {
         .alert-warning, .alert-success {
             border: 0;

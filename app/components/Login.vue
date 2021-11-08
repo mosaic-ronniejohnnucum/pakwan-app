@@ -12,7 +12,7 @@
           <div class="login-section">
             <div class="login-form-container p-5">
               <div id="login-error" v-if="error">
-                <img src="`~/assets/images/error.png" class="img-responsive" />
+                <img src="~/assets/images/error.png" class="img-responsive" />
                 <p>{{ error }}</p>
               </div>
               <p>Sign in to start your session</p>
