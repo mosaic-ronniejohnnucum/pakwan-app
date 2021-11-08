@@ -55,7 +55,6 @@ export default {
     methods : {
         doLogout(){
             this.$auth.logout()
-            this.$router.push('/login')
         },
         toggleDropDown(){
             this.dropDownOpen = !this.dropDownOpen
