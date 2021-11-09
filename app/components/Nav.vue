@@ -27,7 +27,7 @@
                                         <small>Admin</small>
                                     </div>
                                     <div class="dropdown-divider"></div>
-                                    <nuxt-link to="/settings" class="d-flex align-items-center"><img src="~/assets/images/settings.png"> Settings</nuxt-link>
+                                    <nuxt-link to="/settings/account" class="d-flex align-items-center"><img src="~/assets/images/settings.png"> Settings</nuxt-link>
                                     <div class="dropdown-divider"></div>
                                     <a href="#" class="d-flex align-items-center" @click.prevent="doLogout"><img src="~/assets/images/logout.png"> Logout</a>
                                 </div>
