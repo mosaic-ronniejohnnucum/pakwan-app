@@ -96,17 +96,17 @@ export default {
   },
   methods: {
     async doLogin() {
+      
       this.$v.$touch()
       if (this.$v.$invalid) {
       } else {
-        await this.$auth
-          .loginWith('local', {
+        console.log(this.user)
+        await this.$auth.loginWith('local', {
             data: this.user,
-          })
-          .then((res) => {
+          }).then((res) => {
             this.$auth.setToken(res.data.data.AccessToken)
-          })
-          .catch((e) => {
+            alert('asdas')
+          }).catch((e) => {
             const { response } = e
             if (typeof response != 'undefined')
               this.error = response.data.description
