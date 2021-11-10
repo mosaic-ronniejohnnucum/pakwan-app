@@ -32,21 +32,21 @@
                                     <div class="form-group">
                                         <div>
                                             <label for="first">First Name</label>
-                                            <input type="text" placeholder="First Name" value="Charlene" disabled>
+                                            <input type="text" placeholder="First Name" value="Charlene">
                                         </div>
                                         <div>
                                             <label for="email">Email Address</label>
-                                            <input type="email" placeholder="Email" value="charlener@mosaic-solutions.com" disabled>
+                                            <input type="email" placeholder="Email" value="charlener@mosaic-solutions.com">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div>
                                             <label for="last">Last Name</label>
-                                            <input type="text" placeholder="Last Name" value="Rodriguez" disabled>
+                                            <input type="text" placeholder="Last Name" value="Rodriguez">
                                         </div>
                                         <div>
                                             <label for="account">Account Type</label>
-                                            <input type="text" value="Admin" disabled>
+                                            <input type="text" value="Admin">
                                         </div>
                                     </div>
                                 </div>

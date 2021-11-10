@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider;nuxt",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider;nuxt build",
     "start": "export NODE_OPTIONS=--openssl-legacy-provider;nuxt start",
     "generate": "export NODE_OPTIONS=--openssl-legacy-provider;nuxt generate",
     "test": "export NODE_OPTIONS=--openssl-legacy-provider;jest"
+=======
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider&&nuxt",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider&&nuxt build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider&&nuxt start",
+    "generate": "set NODE_OPTIONS=--openssl-legacy-provider&&nuxt generate",
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider&&jest"
+>>>>>>> 61f700139a1094e35df0e399a8ba27ca7e0dada8
   },
   "dependencies": {
     "@nuxtjs/auth-next": "5.0.0-1624817847.21691f1",
