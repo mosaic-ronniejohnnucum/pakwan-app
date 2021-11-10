@@ -22,7 +22,7 @@
                     type="email"
                     class="form-control error"
                     placeholder="Email"
-                    v-model="user.email"
+                    v-model="user.email" required
                   />
                   <i class="fa fa-user"></i>
                 </div>
