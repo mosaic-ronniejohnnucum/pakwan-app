@@ -8,7 +8,7 @@
                 </nuxt-link>
             </li>
             <li>
-                <nuxt-link to="/gsettings/security" class="d-flex align-items-center justify-content-between">
+                <nuxt-link to="/settings/security" class="d-flex align-items-center justify-content-between">
                     <div>Security<br><small>Change Password</small></div>
                     <i class="fas fa-angle-right"></i>
                 </nuxt-link>
