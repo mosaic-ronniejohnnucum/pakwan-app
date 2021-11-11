@@ -119,6 +119,7 @@ section.dashboard-content {
             }
         }
         .table {
+            border-bottom: solid 4px $dblue;
             .thead-blue {
                 th {
                     background-color: $dblue;
@@ -157,6 +158,35 @@ section.dashboard-content {
     .pagination {
         strong {
             @include font-size(0.9rem);
+        }
+        ul {
+            li {
+                margin: 0 0 0 5px;
+                span.page-link {
+                    @include font-size(1rem);
+                    color: $black;
+                    font-weight: $bold;
+                }
+                button.page-link {
+                    background-color: $blue;
+                    color: $white;
+                    border: 0;
+                }
+                .page-link {
+                    padding: 3px 10px;
+                    @include border-radius(5px);
+                    background-color: #f3f3f3;
+                    color: $black;
+                }
+            }
+            li.disabled {
+                span {
+                    border: 0.7px solid #CBCBCB !important;
+                    background-color: #E9E9E9;
+                    border: 0;
+                    color: #C8C8C8 !important;
+                }
+            }
         }
     }
 }

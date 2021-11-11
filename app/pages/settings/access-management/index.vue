@@ -40,29 +40,29 @@
                                                     </template>
                                                     <template #cell(actions)="data" >
                                                         <div class="actions d-flex justify-content-start btn-container">
-                                                            <nuxt-link :to="`/access-management/edit/${data.item.id}`" class="mr-3"><i class="fas fa-eye"></i> View</nuxt-link>
-                                                            <nuxt-link :to="`/access-management/edit/${data.item.id}`" class="mr-3"><i class="fas fa-cog"></i> Modify</nuxt-link>
+                                                            <nuxt-link :to="`/settings/access-management/edit/${data.item.id}`" class="mr-3"><i class="fas fa-eye"></i> View</nuxt-link>
+                                                            <nuxt-link :to="`/settings/access-management/edit/${data.item.id}`" class="mr-3"><i class="fas fa-cog"></i> Modify</nuxt-link>
                                                             <a class="delete"  href="" @click.prevent="doDelete('items',data.item.id)"><i class="fas fa-times"></i> Delete</a>
                                                         </div>
                                                     </template>   
                                                 </b-table>
+                                                <div class="pagination d-flex align-items-center justify-content-between">
+                                                    <strong>Showing 1 of 1</strong>
+                                                    <b-pagination
+                                                    v-model="currentPage"
+                                                    :total-rows="totalRows"
+                                                    :per-page="perPage"
+                                                    align="fill"
+                                                    size="sm"
+                                                    class="my-0"
+                                                    ></b-pagination>
+                                                </div>
                                             </div>
                                         </b-tab>
                                         <b-tab title="Second">
                                             <p>I'm the second tab</p>
                                         </b-tab>
                                     </b-tabs>
-                                </div>
-                                <div class="pagination d-flex d-align-center justify-content-between">
-                                    <strong>Showing 1 of 1</strong>
-                                    <b-pagination
-                                    v-model="currentPage"
-                                    :total-rows="totalRows"
-                                    :per-page="perPage"
-                                    align="fill"
-                                    size="sm"
-                                    class="my-0"
-                                    ></b-pagination>
                                 </div>
                             </div>
                         </div>
@@ -93,9 +93,9 @@ export default {
               }
           ],
         items: [
-          { name: 'John Doe', email: 'johnd@mosaic-solutions.com', user: 'Admin' },
-          { name: 'Ron Nucum', email: 'ronnien@mosaic-solutions.com', user: 'Admin' },
-          { name: 'Joseph Molinas', email: 'josephm@mosaic-solutions.com', user: 'Admin' }
+          { id: 1, name: 'John Doe', email: 'johnd@mosaic-solutions.com', user: 'Admin' },
+          { id: 2, name: 'Ron Nucum', email: 'ronnien@mosaic-solutions.com', user: 'Admin' },
+          { id: 3, name: 'Joseph Molinas', email: 'josephm@mosaic-solutions.com', user: 'Admin' }
         ]
       }
     }

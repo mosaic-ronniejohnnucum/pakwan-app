@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="dashboard-title">
-                    <h3>Security</h3>
+                    <h3>Settings</h3>
                     </div>
                 </div>
             </div>
